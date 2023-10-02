@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Explorando Planos Fotográficos</title>
+    <link rel="icon" href="favicon.ico" type="image/x-icon"> <!-- Favicon -->
+    <meta name="description" content="Explora los diferentes planos fotográficos y descubre cómo influencian la percepción de las imágenes. Aprende sobre primer plano, plano medio, plano general y más.">
+    
+    <!-- Enlace a Bootstrap CSS -->
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    
+    <style>
+        /* Agregamos estilos para el separador de sección */
+        .section-divider {
+            border-top: 1px solid #ccc;
+            margin-top: 20px;
+            margin-bottom: 20px;
+        }
+
+        /* Estilo para el enlace activo en la barra de navegación */
+        .navbar-nav .active {
+            font-weight: bold;
+        }
+
+        /* Estilo para la imagen con transición suave */
+        .img-fluid {
+            transition: opacity 0.5s ease-in-out;
+        }
+
+        /* Estilo para el pie de página */
+        footer {
+            background-color: #333;
+            color: white;
+            padding: 10px 0;
+        }
+
+        /* Estilo para el botón de "Regresar al inicio" */
+        #scrollToTopButton {
+            display: none;
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            background-color: #007BFF;
+            color: #fff;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <header class="bg-primary text-white text-center py-4">
+        <h1>Explorando Planos Fotográficos</h1>
+    </header>
+
+    <!-- Barra de navegación Bootstrap -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+        <div class="container">
+            <a class="navbar-brand" href="#">Inicio</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav" aria-labelledby="menu-navegacion">
+                <ul class="navbar-nav">
+                    <li class="nav-item"><a class="nav-link active" href="#introduccion">Introducción</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#primer-plano">Primer Plano</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#plano-medio">Plano Medio</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#plano-general">Plano General</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#plano-contrapicado">Plano Contrapicado</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#plano-picado">Plano Picado</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Aquí incluimos la imagen optimizada -->
+    <img src="https://colombia.bioweb.co/cdn/shop/products/CANO-EOS-90-80.jpg?v=1681666055.jpg" alt="Cámara Canon" class="img-fluid">
+
+    <div class="container mt-4">
+        <!-- Tabla de Bootstrap -->
+        <table class="table table-bordered">
+            <thead class="bg-light">
+                <tr>
+                    <th>Tipo de Plano</th>
+                    <th>Descripción</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Primer plano</td>
+                    <td>Enfoque en los detalles. Captura expresiones faciales y emociones intensas.</td>
+                </tr>
+                <tr>
+                    <td>Plano medio</td>
+                    <td>Muestra al sujeto desde la cintura o rodillas hacia arriba. Combina expresión del rostro y gestos corporales.</td>
+                </tr>
+                <tr>
+                    <td>Plano general</td>
+                    <td>Abarca una escena completa, revelando el entorno y la atmósfera.</td>
+                </tr>
+                <tr>
+                    <td>Plano contrapicado</td>
+                    <td>Tomado desde abajo hacia arriba, crea una sensación de poder y drama en el sujeto.</td>
+                </tr>
+                <tr>
+                    <td>Plano picado</td>
+                    <td>Tomado desde arriba hacia abajo, transmite vulnerabilidad y una perspectiva única.</td>
+                </tr>
+            </tbody>
+        </table>
+
+        <section class="mt-4">
+            <article id="introduccion" class="fade-in">
+                <h2>Descripción del Sitio Web</h2>
+                <p>Descubre el arte de la fotografía a través de los planos. Nuestro sitio te lleva en un recorrido visual para explorar cómo diferentes planos fotográficos, como el primer plano, plano medio, plano general y otros, pueden transformar la manera en que contamos historias y transmitimos emociones. Aprende cómo el enfoque en los detalles o el cambio de perspectiva pueden influir en la percepción de una imagen y crear impacto. Sumérgete en el mundo de la composición fotográfica y desata tu creatividad a través de los planos.</p>
+            </article>
+            <div class="section-divider"></div>
+            <article id="primer-plano" class="fade-in">
+                <h2>Primer plano: Enfoque en los detalles</h2>
+                <p>En este tipo de plano, la cámara se acerca mucho al sujeto, permitiendo capturar los detalles más pequeños y expresiones faciales. Es ideal para transmitir emociones intensas.</p>
+            </article>
+            <div class="section-divider"></div>
+            <article id="plano-medio" class="fade-in">
+                <h2>Plano medio: Contexto y conexión</h2>
+                <p>En este plano, se muestra al sujeto desde la cintura o rodillas hacia arriba. Permite combinar la expresión del rostro con gestos corporales, brindando contexto y conexión con la audiencia.</p>
+            </article>
+            <div class="section-divider"></div>
+            <article id="plano-general" class="fade-in">
+                <h2>Plano general: Escenarios y ambiente</h2>
+                <p>El plano general abarca una escena completa, mostrando tanto al sujeto como su entorno. Es útil para contextualizar y revelar la atmósfera y el ambiente.</p>
+            </article>
+            <div class="section-divider"></div>
+            <article id="plano-contrapicado" class="fade-in">
+                <h2>Plano contrapicado: Poder y drama</h2>
+                <p>Este plano se obtiene tomando la fotografía desde abajo hacia arriba, lo que a menudo hace que el sujeto parezca más alto y poderoso. Es perfecto para crear una sensación de drama y empoderamiento.</p>
+            </article>
+            <div class="section-divider"></div>
+            <article id="plano-picado" class="fade-in">
+                <h2>Plano picado: Vulnerabilidad y perspectiva</h2>
+                <p>El plano picado se captura desde arriba hacia abajo, lo que puede hacer que el sujeto parezca más pequeño y vulnerable. Ofrece una perspectiva única y puede transmitir una sensación de debilidad.</p>
+            </article>
+        </section>
+    </div>
+
+    <button id="scrollToTopButton" onclick="scrollToTop()">Regresar al inicio</button>
+
+    <section class="mt-4">
+        <!-- Contenido de las secciones aquí... -->
+    </section>
+</div>
+
+<aside class="bg-light p-4">
+    <h2 id="info-contacto">Información Personal</h2>
+    <p>Nombre: Marco A Correa C</p>
+    <p>Contacto: 3026006173</p>
+    <p>Correo: themasteroficialxd@gmail.com</p>
+    <p>Institución: Skolmi</p>
+</aside>
+
+<div class="container mt-4">
+    <!-- Formulario de contacto de Bootstrap -->
+    <h2 class="mt-4">Contáctanos</h2> 
+    <form>
+        <!-- Formulario de contacto aquí... -->
+    </form>
+    <form>
+    <div class="mb-3">
+        <label for="nombre" class="form-label">Nombre</label>
+        <input type="text" class="form-control" id="nombre" placeholder="Escribe tu nombre">
+    </div>
+    <div class="mb-3">
+        <label for="correo" class="form-label">Correo Electrónico</label>
+        <input type="email" class="form-control" id="correo" placeholder="Escribe tu correo electrónico">
+    </div>
+    <div class="mb-3">
+        <label for="mensaje" class="form-label">Mensaje</label>
+        <textarea class="form-control" id="mensaje" rows="3" placeholder="Escribe tu mensaje"></textarea>
+    </div>
+    <button type="submit" class="btn btn-primary">Enviar</button>
+</form>
+</div>
+
+<!-- Enlace a Bootstrap JS y jQuery (necesario para algunos componentes de Bootstrap) -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+<script>
+    $(document).ready(function() {
+        // Agregar un evento de clic a los enlaces de navegación
+        $('a.nav-link').on('click', function(e) {
+            e.preventDefault(); // Prevenir el comportamiento predeterminado del enlace
+            var target = $(this).attr('href'); // Obtener el atributo href del enlace
+            $('html, body').animate({
+                scrollTop: $(target).offset().top - 50 // Hacer desplazamiento suave hasta la posición de destino con un pequeño margen
+            }, 1000); // Duración de la animación en milisegundos (1 segundo en este caso)
+        });
+    });
+
+    // Agregar una animación de desvanecimiento a las secciones
+    $('.fade-in').hide().fadeIn(1000);
+
+    // Obtén una referencia al botón
+    var scrollToTopButton = document.getElementById("scrollToTopButton");
+
+    // Agrega un evento de desplazamiento para mostrar u ocultar el botón
+    window.addEventListener("scroll", function() {
+        if (window.pageYOffset > 200) { // Cambia este valor según tu preferencia
+            scrollToTopButton.style.display = "block";
+        } else {
+            scrollToTopButton.style.display = "none";
+        }
+    });
+
+    // Función para desplazarse al inicio de la página cuando se hace clic en el botón
+    function scrollToTop() {
+        window.scrollTo({
+            top: 0,
+            behavior: "smooth"
+        });
+    }
+</script>
+
+<footer class="bg-primary text-white text-center py-2 mt-4">
+    <p>&copy; 2023 Marco. Todos los derechos reservados.</p>
+</footer>
+</body>
+</html>
