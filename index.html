@@ -1,38 +1,58 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Explorando Planos Fotográficos</title>
-    <link rel="icon" href="favicon.ico" type="image/x-icon"> <!-- Favicon -->
-    <meta name="description" content="Explora los diferentes planos fotográficos y descubre cómo influencian la percepción de las imágenes. Aprende sobre primer plano, plano medio, plano general y más.">
-    
-    <!-- Enlace a Bootstrap CSS -->
-    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
-    
     <style>
-        /* Agregamos estilos para el separador de sección */
-        .section-divider {
-            border-top: 1px solid #ccc;
-            margin-top: 20px;
-            margin-bottom: 20px;
+        /* Establece el fondo con gradiente para dar un efecto tridimensional */
+        body {
+            background: linear-gradient(135deg, #3498db, #e74c3c, #9b59b6, #2ecc71);
+            background-size: 400% 400%;
+            animation: gradient 15s ease infinite;
         }
 
-        /* Estilo para el enlace activo en la barra de navegación */
-        .navbar-nav .active {
+        @keyframes gradient {
+            0% {
+                background-position: 0% 50%;
+            }
+            50% {
+                background-position: 100% 50%;
+            }
+            100% {
+                background-position: 0% 50%;
+            }
+        }
+
+        /* Estiliza el encabezado con un efecto de borde cúbico */
+        header {
+            background-color: rgba(255, 255, 255, 0.3);
+            border: 2px solid rgba(255, 248, 248, 0.2);
+            border-radius: 10px;
+            padding: 20px;
+            margin: 20px;
+            text-align: center;
+            box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.5);
+        }
+
+        /* Estiliza la barra de navegación con un fondo cúbico */
+        .navbar {
+            background: rgba(0, 0, 0, 0.5);
+            border: 1px solid rgba(255, 255, 255, 0.2);
+            border-radius: 10px;
+        }
+
+        /* Estiliza los enlaces de navegación */
+        .navbar-nav .nav-link {
+            color: white !important;
             font-weight: bold;
         }
 
-        /* Estilo para la imagen con transición suave */
-        .img-fluid {
-            transition: opacity 0.5s ease-in-out;
-        }
-
-        /* Estilo para el pie de página */
-        footer {
-            background-color: #333;
-            color: white;
-            padding: 10px 0;
+        /* Estilo para las secciones con sombras cúbicas */
+        .section {
+            background-color: rgba(255, 255, 255, 0.1);
+            border: 1px solid rgba(0, 0, 0, 0.2);
+            border-radius: 10px;
+            padding: 20px;
+            margin: 20px;
+            box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.5);
         }
 
         /* Estilo para el botón de "Regresar al inicio" */
@@ -47,15 +67,43 @@
             padding: 10px 20px;
             border-radius: 5px;
             cursor: pointer;
+            box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.5);
+        }
+
+        /* Estilo para la tabla con aspecto cúbico y fondo blanco */
+        .table-cubica {
+            background-color: #fff;
+            border: 2px solid rgba(0, 0, 0, 0.2);
+            border-radius: 10px;
+            padding: 20px;
+            box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.5);
+        }
+
+        /* Cambio de color del texto grande a blanco */
+        .text-grande {
+            color: blue !important;
+        }
+
+        /* Cambio de color del título a rojo */
+        h1 {
+            color: red !important;
         }
     </style>
+    
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Explorando Planos Fotográficos</title>
+    <link rel="icon" href="favicon.ico" type="image/x-icon"> <!-- Favicon -->
+    <meta name="description" content="Explora los diferentes planos fotográficos y descubre cómo influencian la percepción de las imágenes. Aprende sobre primer plano, plano medio, plano general y más.">
+    
+    <!-- Enlace a Bootstrap CSS -->
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
 </head>
 <body>
-    <header class="bg-primary text-white text-center py-4">
+    <header>
         <h1>Explorando Planos Fotográficos</h1>
     </header>
 
-    <!-- Barra de navegación Bootstrap -->
     <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
         <div class="container">
             <a class="navbar-brand" href="#">Inicio</a>
@@ -75,13 +123,11 @@
         </div>
     </nav>
 
-    <!-- Aquí incluimos la imagen optimizada -->
-    <img src="https://colombia.bioweb.co/cdn/shop/products/CANO-EOS-90-80.jpg?v=1681666055.jpg" alt="Cámara Canon" class="img-fluid">
+    <img src="http://4.bp.blogspot.com/-3PinkIQWDnY/VR7rKTuq00I/AAAAAAAAAn8/fDdRb9jt3dM/s1600/CAMARA%2BFOTOGRAFICA%2BEN%2BPNG.png" alt="Cámara Canon" class="img-fluid">
 
     <div class="container mt-4">
-        <!-- Tabla de Bootstrap -->
-        <table class="table table-bordered">
-            <thead class="bg-light">
+        <table class="table table-cubica">
+            <thead>
                 <tr>
                     <th>Tipo de Plano</th>
                     <th>Descripción</th>
@@ -112,34 +158,34 @@
         </table>
 
         <section class="mt-4">
-            <article id="introduccion" class="fade-in">
+            <article id="introduccion" class="section">
                 <h2>Descripción del Sitio Web</h2>
                 <p>Descubre el arte de la fotografía a través de los planos. Nuestro sitio te lleva en un recorrido visual para explorar cómo diferentes planos fotográficos, como el primer plano, plano medio, plano general y otros, pueden transformar la manera en que contamos historias y transmitimos emociones. Aprende cómo el enfoque en los detalles o el cambio de perspectiva pueden influir en la percepción de una imagen y crear impacto. Sumérgete en el mundo de la composición fotográfica y desata tu creatividad a través de los planos.</p>
             </article>
             <div class="section-divider"></div>
-            <article id="primer-plano" class="fade-in">
-                <h2>Primer plano: Enfoque en los detalles</h2>
-                <p>En este tipo de plano, la cámara se acerca mucho al sujeto, permitiendo capturar los detalles más pequeños y expresiones faciales. Es ideal para transmitir emociones intensas.</p>
+            <article id="primer-plano" class="section">
+                <h2 class="text-grande">Primer plano: Enfoque en los detalles</h2>
+                <p class="text-grande">En este tipo de plano, la cámara se acerca mucho al sujeto, permitiendo capturar los detalles más pequeños y expresiones faciales. Es ideal para transmitir emociones intensas.</p>
             </article>
             <div class="section-divider"></div>
-            <article id="plano-medio" class="fade-in">
-                <h2>Plano medio: Contexto y conexión</h2>
-                <p>En este plano, se muestra al sujeto desde la cintura o rodillas hacia arriba. Permite combinar la expresión del rostro con gestos corporales, brindando contexto y conexión con la audiencia.</p>
+            <article id="plano-medio" class="section">
+                <h2 class="text-grande">Plano medio: Contexto y conexión</h2>
+                <p class="text-grande">En este plano, se muestra al sujeto desde la cintura o rodillas hacia arriba. Permite combinar la expresión del rostro con gestos corporales, brindando contexto y conexión con la audiencia.</p>
             </article>
             <div class="section-divider"></div>
-            <article id="plano-general" class="fade-in">
-                <h2>Plano general: Escenarios y ambiente</h2>
-                <p>El plano general abarca una escena completa, mostrando tanto al sujeto como su entorno. Es útil para contextualizar y revelar la atmósfera y el ambiente.</p>
+            <article id="plano-general" class="section">
+                <h2 class="text-grande">Plano general: Escenarios y ambiente</h2>
+                <p class="text-grande">El plano general abarca una escena completa, mostrando tanto al sujeto como su entorno. Es útil para contextualizar y revelar la atmósfera y el ambiente.</p>
             </article>
             <div class="section-divider"></div>
-            <article id="plano-contrapicado" class="fade-in">
-                <h2>Plano contrapicado: Poder y drama</h2>
-                <p>Este plano se obtiene tomando la fotografía desde abajo hacia arriba, lo que a menudo hace que el sujeto parezca más alto y poderoso. Es perfecto para crear una sensación de drama y empoderamiento.</p>
+            <article id="plano-contrapicado" class="section">
+                <h2 class="text-grande">Plano contrapicado: Poder y drama</h2>
+                <p class="text-grande">Este plano se obtiene tomando la fotografía desde abajo hacia arriba, lo que a menudo hace que el sujeto parezca más alto y poderoso. Es perfecto para crear una sensación de drama y empoderamiento.</p>
             </article>
             <div class="section-divider"></div>
-            <article id="plano-picado" class="fade-in">
-                <h2>Plano picado: Vulnerabilidad y perspectiva</h2>
-                <p>El plano picado se captura desde arriba hacia abajo, lo que puede hacer que el sujeto parezca más pequeño y vulnerable. Ofrece una perspectiva única y puede transmitir una sensación de debilidad.</p>
+            <article id="plano-picado" class="section">
+                <h2 class="text-grande">Plano picado: Vulnerabilidad y perspectiva</h2>
+                <p class="text-grande">El plano picado se captura desde arriba hacia abajo, lo que puede hacer que el sujeto parezca más pequeño y vulnerable. Ofrece una perspectiva única y puede transmitir una sensación de debilidad.</p>
             </article>
         </section>
     </div>
@@ -151,7 +197,7 @@
     </section>
 </div>
 
-<aside class="bg-light p-4">
+<aside class="section bg-light p-4">
     <h2 id="info-contacto">Información Personal</h2>
     <p>Nombre: Marco A Correa C</p>
     <p>Contacto: 3026006173</p>
@@ -160,7 +206,6 @@
 </aside>
 
 <div class="container mt-4">
-    <!-- Formulario de contacto de Bootstrap -->
     <h2 class="mt-4">Contáctanos</h2> 
     <form>
         <!-- Formulario de contacto aquí... -->
@@ -199,32 +244,23 @@
         });
     });
 
-    // Agregar una animación de desvanecimiento a las secciones
-    $('.fade-in').hide().fadeIn(1000);
+    // Agregar una animación al botón "Regresar al inicio"
+    window.onscroll = function() {
+        scrollFunction();
+    };
 
-    // Obtén una referencia al botón
-    var scrollToTopButton = document.getElementById("scrollToTopButton");
-
-    // Agrega un evento de desplazamiento para mostrar u ocultar el botón
-    window.addEventListener("scroll", function() {
-        if (window.pageYOffset > 200) { // Cambia este valor según tu preferencia
-            scrollToTopButton.style.display = "block";
+    function scrollFunction() {
+        if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+            document.getElementById("scrollToTopButton").style.display = "block";
         } else {
-            scrollToTopButton.style.display = "none";
+            document.getElementById("scrollToTopButton").style.display = "none";
         }
-    });
+    }
 
-    // Función para desplazarse al inicio de la página cuando se hace clic en el botón
     function scrollToTop() {
-        window.scrollTo({
-            top: 0,
-            behavior: "smooth"
-        });
+        document.body.scrollTop = 0; // Para Safari
+        document.documentElement.scrollTop = 0; // Para Chrome, Firefox, IE y Opera
     }
 </script>
-
-<footer class="bg-primary text-white text-center py-2 mt-4">
-    <p>&copy; 2023 Marco. Todos los derechos reservados.</p>
-</footer>
 </body>
 </html>
